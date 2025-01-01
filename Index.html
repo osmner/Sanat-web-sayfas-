@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanatçının Adı - Tezhip ve Minyatür Sanatı</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #001f3d;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        .main-content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .main-content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #1d3557;
+        }
+
+        .about, .portfolio, .contact {
+            margin-bottom: 40px;
+        }
+
+        .portfolio-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            width: 250px;
+            background-color: #001f3d;
+            color: #fff;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #001f3d;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #1d3557;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background-color: #ffcc00;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .contact form button:hover {
+            background-color: #ffb400;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sanatçının Adı</h1>
+    <p>Türk Tezhip ve Minyatür Sanatçısı</p>
+</header>
+
+<div class="main-content">
+
+    <div class="about">
+        <h2>Hakkında</h2>
+        <p>Sanatçının biyografisi burada yer alacak. Türk tezhip ve minyatür sanatının derinliklerine inmeyi ve bu geleneksel sanatları günümüz dünyasında yaşatmayı hedefliyorum.</p>
+    </div>
+
+    <div class="portfolio">
+        <h2>Eserlerim</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <img src="eser1.jpg" alt="Eser 1">
+                <p>Eser 1 Açıklaması</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="eser2.jpg" alt="Eser 2">
+                <p>Eser 2 Açıklaması</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="eser3.jpg" alt="Eser 3">
+                <p>Eser 3 Açıklaması</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>İletişim</h2>
+        <form action="mailto:email@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Adınız" required>
+            <input type="email" name="email" placeholder="E-posta" required>
+            <textarea name="message" placeholder="Mesajınız" rows="5" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <p>Takip Et: 
+        <a href="https://instagram.com">Instagram</a> | 
+        <a href="https://facebook.com">Facebook</a>
+    </p>
+</footer>
+
+</body>
+</html>
